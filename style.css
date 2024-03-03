@@ -8,110 +8,81 @@
 html{
   scroll-behavior: smooth ;
 }
-.container {
-  background-image: url("Electrical\ Background.jpg");
+.container{
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-image: url("./images/Electrical\ Background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
-  width: 100vw;
   background-attachment: fixed;
-  position: relative;
 }
-.navbar {
+.container .navbar{
   width: 100%;
-  height: 80px;
-  padding: 20px;
   position: fixed;
-  top: 0%;
-
-  z-index: 99;
+  z-index: 1000;
+  padding: 20px 0;
 }
-.navbar-content {
+.navbar .nav-content{
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  height: 100%;
-  padding: 0 12px;
+  justify-content: space-between;
   margin: 0 64.4px;
-}
-.navbar .heading {
-  font-size: 1.5rem;
-  color: #fe4a17;
-  font-weight: bold;
-}
-.navbar .nav-items {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
-  text-decoration: none;
-  list-style-type: none;
-  list-style: none;
-  font-size: 1.2rem;
+  padding: 0 12px;
 }
 
-a {
+.nav-content .logo .logo-head{
+  font-size: 24px;
+  font-weight:bold;
+  color: #fe4a17;
+  cursor: default;
+  font-family: "Allerta Stencil";
+}
+
+.nav-items{
+  display: flex;
+  list-style-type: none;
   text-decoration: none;
-  color: #000;
-  text-transform: capitalize;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+.nav-items li{
+  padding: 8px 12px;
+  text-decoration: none;
+  font: 16px;
+}
+.nav-items li a{
+  padding: 0 3px;
+  text-decoration: none;
+  font: 16px;
+  font-family: "open sans";
+  font-weight: 600;
+  color: white;
+  position: relative;
+  cursor: pointer;
 }
 
 .nav-items li a::after{
   content: "";
   position: absolute;
-  background-color: #fe4a17;
-  height: 3px ;
-  width: 0;
+  width: 100%;
+  height: 2px;
+  border-radius: 20px;
+  bottom: -5px;
   left: 0;
-  bottom :-5px;
-  border-radius: 5px;
+  background-color: #fe4a17;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .nav-items li a:hover::after{
-  width: 110%;
-  transition: all 0.5s;
-}
-.dropdown-parent {
-  position: relative;
-  display: inline-block;
-  align-items: center;
-  place-items: center;
-}
-.dropdown {
-  position: absolute;
-  margin: 0.5rem 0;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  top: 25px;
-  display: none;
-  list-style: none;
-  background-color: white;
-  border-radius: 8px;
-  padding: 1rem 0;
-  width: 10rem;
-}
-.dropdown-list-item {
-  margin-top: 0.5rem;
-  margin-left: 0.8rem;
-  max-height: 20rem;
-}
-a:hover + .dropdown,
-.dropdown:hover {
-  display: block;
-}
-.svg {
-  padding-top: 5px;
+  visibility: visible;
+  transform: scaleX(1.1);
 }
 
-li a {
-  height: 30px;
-  color: white;
-}
-
-.bgcolor{
-    background:rgba(56, 67,75, 0.8);
-    transition: all .7s;
-}
 
 /* section1 */
 .homepage-content {
