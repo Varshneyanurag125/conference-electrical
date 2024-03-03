@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+.container {
+  background-image: url("Electrical\ Background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: maroon;
+  position: relative;
+}
+.navbar {
+  width: 100%;
+  height: 80px;
+  padding: 20px;
+  position: fixed;
+}
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 12px;
+  margin: 0 64.4px;
+}
+.navbar .heading {
+  font-size: 1.5rem;
+  color: #fe4a17;
+  font-weight: bold;
+}
+.navbar .nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  text-decoration: none;
+  list-style-type: none;
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  text-transform: capitalize;
+}
+.dropdown-parent {
+  position: relative;
+  display: inline-block;
+  align-items: center;
+  place-items: center;
+}
+.dropdown {
+  position: absolute;
+  /* border: 1px solid red; */
+  /* padding: 0.5rem; */
+  margin: 0.5rem 0;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  top: 25px;
+  display: none;
+  list-style: none;
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem 0;
+  width: 10rem;
+}
+.dropdown-list-item {
+  margin-top: 0.5rem;
+  margin-left: 0.8rem;
+  max-height: 20rem;
+}
+a:hover + .dropdown,
+.dropdown:hover {
+  display: block;
+}
+.svg {
+  padding-top: 5px;
+}
+
+li a {
+  height: 30px;
+  color: white;
+}
+
+.bgcolor{
+    background:white;
+}
+
+/* section1 */
+.homepage-content {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  /* position: absolute; */
+  /* z-index: 99; */
+  width: 100%;
+}
+.homepage-content h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 1rem;
+  font-family: 'Allerta Stencil';
+}
+.homepage-content h1 {
+    font-family: 'Allerta Stencil';
+    font-size: 3rem;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 1rem;
+}
+.homepage-content h3 {
+    font-family: 'Allerta Stencil';
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #fe4a17;
+  margin-bottom: 1rem;
+}
+
+/* timmer */
+
+.countdown-container {
+    display: flex;
+    width: 50%;
+    max-width: 50%;
+    justify-content: space-between;
+    margin-top: 4rem;
+  }
+  
+  .days-container,
+  .hours-container,
+  .minutes-container, 
+  .seconds-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.1);
+    border: 5px solid rgba(255,255,255,0.3);
+    width: 100px;
+    height: 100px;
+    border-radius: 99px;
+  }
+  
+  .days,
+  .hours,
+  .minutes,
+  .seconds {
+    font-size: 2rem; 
+    margin: 10px 0;
+    color: #fe4a17;    font-family: "Allerta Stencil";
+  }
+  
+  .days-label,
+  .hours-label,
+  .minutes-label,
+  .seconds-label {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: white;
+  }
+
+/* section 2 */
+.about-content {
+  background-color: #f8f9fa;
+  /* height: 100vh; */
+  width: 100vw;
+  padding: 2rem 0;
+  /* border: 1px solid red; */
+}
+.about-container {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 25px 12px 15px 12px;
+  margin: 0 64.4px;
+  /* border: 1px solid red; */
+  border-radius: 6px;
+  height: 100%;
+}
+.wrapper-head {
+  margin-top: 10px;
+  padding: 10px 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.content-wrapper {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+}
+.image-wrapper {
+  height: 100%;
+  width: 40%;
+}
+.para-wrapper {
+  height: 100%;
+  width: 40%;
+}
+.copywrite {
+  height: 4vh;
+  background-color: slategray;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
