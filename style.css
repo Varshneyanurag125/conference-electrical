@@ -83,6 +83,10 @@ html{
   transform: scaleX(1.1);
 }
 
+.bgcolor{
+    background:rgba(56, 67,75, 0.8);
+    transition: all .7s;
+}
 
 /* section1 */
 .homepage-content {
