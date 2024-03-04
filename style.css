@@ -8,9 +8,10 @@
 html{
   scroll-behavior: smooth ;
 }
+
 .container{
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   position: relative;
   background-image: url("./images/Electrical\ Background.jpg");
   background-size: cover;
